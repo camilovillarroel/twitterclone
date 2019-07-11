@@ -1,9 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @tweet.content %>
-</p>
+
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |
 <%= link_to 'Back', tweets_path %>
+
+<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+  <div class="card-header"><strong>Title:</strong>
+  <%= @tweet.title %><br></div>
+  <div class="card-body">
+    <p class="card-text"><strong>Content:</strong>
+  <%= @tweet.content %></p>
+  </div>
+</div>
